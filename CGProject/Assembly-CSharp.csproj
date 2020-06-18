@@ -72,10 +72,12 @@
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\FloorNeonLightsSystem.cs" />
+    <Compile Include="Assets\Scripts\PostProcessingCustom.cs" />
     <Compile Include="Assets\Scripts\WallLightSystem.cs" />
     <Compile Include="Assets\Scripts\WarLigthsOn.cs" />
     <None Include="Assets\DOTween\readme.txt" />
     <None Include="Assets\Shaders\Standard-DirSpecHalfLambert\StandardSpecular.shader" />
+    <None Include="Assets\Materials\_Shaderzin.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -30,6 +30,7 @@ public class CameraMovement : MonoBehaviour
                     transform.DOMove(new Vector3(-8, 16.4f, 6.7f), 5f);
                     transform.DORotate(new Vector3(0, 0, 0), 5f).OnComplete(()=> {
                         WarLigthsOn.instance.TurnOnTheLights();
+                        StartCoroutine(activateShader());
                     });
                 });
             });
@@ -46,5 +47,11 @@ public class CameraMovement : MonoBehaviour
         {
             StartCoroutine(ligthUp());
         }
+    }
+
+    IEnumerator activateShader()
+    {
+        yield return new WaitForSeconds(5f);
+        PostProcessingCustom.instance.ActivateShader();
     }
 }
